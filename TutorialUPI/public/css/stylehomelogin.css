@@ -1,0 +1,787 @@
+:root {
+    --primary: #e64d3d;
+    --bg: #0e2a32;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+  }
+  
+  /* Navbar */
+  
+  
+  /* Navbar Search Form */
+  /* .navbar .search-form {
+    position: absolute;
+    top: 100%;
+    right: 7%;
+    background-color: #fff;
+    width: 25rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+  }
+  
+  .navbar .search-form.active {
+    transform: scaleY(1);
+  }
+  
+  .navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    color: var(--bg);
+    padding: 1rem;
+  }
+  
+  .navbar .search-form label {
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 1rem;
+    color: var(--bg);
+  } */
+  
+  /* Hero Section */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/23tutorial.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .hero-diorama {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/DioramaBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .hero-3dimensi {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/3dimensiBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .hero-latar {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/LatarBelakangBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .hero-suasana {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/SepekanKAABG.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .hero-pendahuluan {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/pendahuluanBG.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .hero-merdeka {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/GMerdeka.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .hero::after,
+  .hero-diorama::after,
+  .hero-3dimensi::after,
+  .hero-latar::after,
+  .hero-suasana::after,
+  .hero-pendahuluan::after,
+  .hero-merdeka::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    background: linear-gradient(
+      0deg,
+      rgba(14, 42, 50, 1) 8%,
+      rgba(255, 255, 255, 0) 50%
+    );
+  }
+  
+  .hero .content,
+  .hero-diorama .content,
+  .hero-3dimensi .content,
+  .hero-latar .content,
+  .hero-suasana .content,
+  .hero-pendahuluan .content,
+  .hero-merdeka .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+  }
+  
+  .hero .content h1 {
+    color: var(--primary);
+    font-size: 5em;
+    line-height: 1.2;
+    text-shadow: 0 0 7px var(--bg), 0 0 10px var(--bg), 0 0 21px var(--bg),
+      0 0 42px var(--primary), 0 0 82px var(--primary);
+  }
+  
+  .hero .content h1 span {
+    color: #fff;
+    text-shadow: 0 0 7px var(--bg), 0 0 10px var(--bg), 0 0 21px var(--bg),
+      0 0 42px var(--primary), 0 0 82px var(--primary);
+  }
+  
+  .hero-diorama .content h1,
+  .hero-3dimensi .content h1,
+  .hero-latar .content h1,
+  .hero-suasana .content h1,
+  .hero-pendahuluan .content h1,
+  .hero-merdeka .content h1 {
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 0 0 7px var(--bg), 0 0 10px var(--bg), 0 0 21px var(--bg),
+      0 0 42px var(--primary), 0 0 82px var(--primary);
+    line-height: 1.2;
+  }
+  
+  .hero-diorama .content h1 span,
+  .hero-3dimensi .content h1 span,
+  .hero-latar .content h1 span,
+  .hero-suasana .content span,
+  .hero-pendahuluan .content span,
+  .hero-merdeka .content span {
+    color: var(--primary);
+    text-shadow: 0 0 7px var(--bg), 0 0 10px var(--bg), 0 0 21px var(--bg),
+      0 0 42px var(--primary), 0 0 82px var(--primary);
+  }
+  
+  .hero .content p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    color: var(--primary);
+    mix-blend-mode: difference;
+  }
+  
+  .hero .content .credit-img,
+  .hero-3dimensi .content .credit-img,
+  .hero-diorama .content .credit-img,
+  .hero-merdeka .content .credit-img,
+  .hero-latar .content .credit-img,
+  .hero-pendahuluan .content .credit-img,
+  .hero-suasana .content .credit-img {
+    flex: 1 1 45rem;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .hero .content .credit-img img,
+  .hero-3dimensi .content .credit-img img,
+  .hero-diorama .content .credit-img img,
+  .hero-merdeka .content .credit-img img,
+  .hero-latar .content .credit-img img,
+  .hero-pendahuluan .content .credit-img img,
+  .hero-suasana .content .credit-img img {
+    border-radius: 5%;
+    width: 85%;
+  }
+  
+  .hero .content .cta,
+  .hero-diorama .content .dioramabutton,
+  .hero-3dimensi .content .mateributton,
+  .hero-latar .content .mateributton,
+  .hero-suasana .content .mateributton,
+  .hero-pendahuluan .content .mateributton,
+  .hero-merdeka .content .mateributton {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--bg);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(179, 207, 194, 0.5);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .materi-museum video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: auto;
+  }
+  
+  /* About Section */
+  .about,
+  .materi,
+  .rekap,
+  .contact,
+  .text-diorama {
+    padding: auto;
+  }
+  
+  .about h2,
+  .materi h2,
+  .rekap h2,
+  .contact h2,
+  .materi-museum h2,
+  .text-diorama h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 7px var(--bg), 0 0 10px var(--bg), 0 0 21px var(--bg),
+    0 0 42px var(--primary), 0 0 82px var(--primary);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about h2 span,
+  .materi h2 span,
+  .rekap h2 span,
+  .contact h2 span,
+  .materi-museum h2 span,
+  .text-diorama span {
+    color: var(--primary);
+    text-shadow: 0 0 7px var(--bg), 0 0 10px var(--bg), 0 0 21px var(--bg),
+      0 0 42px var(--primary), 0 0 82px var(--primary);
+  }
+  
+  .about .row,
+  .text-diorama .row {
+    display: flex;
+  }
+  
+  .about .row .about-img,
+  .text-diorama .row .text-diorama-img {
+    flex: 1 1 45rem;
+    margin: auto;
+  }
+  
+  .about .row .about-img img,
+  .text-diorama .row .text-diorama-img img {
+    border-radius: 5%;
+    width: 100%;
+  }
+  
+  .about .row .content,
+  .text-diorama .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+  }
+  
+  .about .row .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-style: italic;
+    text-shadow: 0 0 7px var(--bg), 0 0 10px var(--bg), 0 0 21px var(--bg),
+      0 0 42px var(--primary), 0 0 82px var(--primary);
+  }
+  
+  .about .row .content h3 span {
+    color: var(--primary);
+    text-shadow: 0 0 7px var(--bg), 0 0 10px var(--bg), 0 0 21px var(--bg),
+      0 0 42px var(--primary), 0 0 82px var(--primary);
+  }
+  
+  .about .row .content p,
+  .text-diorama .row .content p {
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  /* Materi Section */
+  .materi h2,
+  .rekap h2,
+  .contact h2 {
+    margin-bottom: 0;
+  }
+  
+  .materi .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1rem;
+    margin-top: 4rem;
+  }
+  
+  .materi .materi-card {
+    text-align: center;
+    border: 1px solid var(--primary);
+    padding: 2rem;
+    position: relative;
+  }
+  
+  /* .materi .materi-icon {
+    display: flex;
+    justify-content: center;
+    gap: o.5rem;
+  }
+  
+  .materi .materi-icon a {
+    width: 4rem;
+    height: 4rem;
+    color: #fff;
+    margin: 0.3rem;
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .materi .materi-icon a:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+  } */
+  
+  .materi .materi-image {
+    padding: 1rem 0;
+  }
+  
+  .materi .materi-image img {
+    height: 20rem;
+  }
+  
+  .diorama {
+    opacity: 1;
+    height: auto;
+    transition: 0.3s ease;
+    backface-visibility: hidden;
+  }
+  
+  .materi-image:hover .diorama {
+    opacity: 0.3;
+  }
+  
+  .materi .materi-content h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    padding-bottom: 10px;
+  }
+  
+  .materi .materi-content h3:hover {
+    color: var(--primary);
+  }
+  
+  .materi .materi-stars {
+    font-size: 1.7rem;
+    padding: 0.8rem;
+    color: var(--primary);
+  }
+  
+  .materi .materi-stars .bintang {
+    fill: var(--primary);
+  }
+  
+  .materi .materi-detail {
+    font-size: 1.1rem;
+    font-weight: bold;
+    position: absolute; /* Menjadikan materi-detail sebagai elemen absolut */
+    bottom: 10px; /* Sesuaikan nilai bottom sesuai kebutuhan untuk menentukan jarak antara materi-detail dan garis bawah materi-card */
+    left: 50%; /* Menempatkan materi-detail di tengah horizontal */
+    transform: translateX(-50%);
+  }
+  
+  .materi .materi-detail span {
+    color: var(--primary);
+  }
+  
+  /* Rekap Section */
+  .rekap .row {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin-top: 2rem;
+    background-color: #222;
+    padding: 20px; /* Add padding for spacing from the edges */
+    height: 50rem;
+  }
+  
+  .rekap .row .map {
+    width: 100%; /* Set the width to 90% of the parent container */
+    max-width: 100%; /* Set a maximum width if needed */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: cover;
+    margin: 0; /* Reset margin to ensure no unwanted spacing */
+    padding: 0; /* Reset padding to ensure no unwanted spacing */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .rekap .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  
+  .rekap .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--bg);
+    border: 1px solid #eee;
+    padding-left: 2rem;
+  }
+  
+  .rekap .row form .input-group input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    background: none;
+    color: #fff;
+  }
+  
+  .rekap .row form button {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: var(--bg);
+    background-color: var(--primary);
+    cursor: pointer;
+  }
+  
+  /* Contact Section */
+  
+  .contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #222;
+  }
+  
+  .contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  
+  .contact .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--bg);
+    border: 1px solid #eee;
+    padding-left: 2rem;
+  }
+  
+  .contact .row form .input-group input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    background: none;
+    color: #fff;
+  }
+  
+  .contact .row form button {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: var(--bg);
+    background-color: var(--primary);
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  
+  footer {
+    background-color: #222;
+    text-align: center;
+    padding: 1 rem 0 3rem;
+    margin-top: 3rem;
+  }
+  
+  footer .social {
+    padding: 1rem 0;
+  }
+  
+  footer .social a {
+    color: #fff;
+    margin: 1rem;
+  }
+  
+  footer .social a:hover,
+  footer .links a:hover {
+    color: var(--primary);
+  }
+  
+  footer .links {
+    margin-bottom: 1.3rem;
+  }
+  
+  footer .links a {
+    color: #fff;
+    padding: 0.7rem 1rem;
+  }
+  
+  footer .credit {
+    font-size: 0.8rem;
+  }
+  
+  footer .credit a {
+    color: var(--primary);
+    font-weight: 700;
+  }
+  
+  /* Modal Box */
+  /* Item Detail */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-container {
+    position: relative;
+    background-color: #fefefe;
+    color: var(--bg);
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid var(--primary);
+    animation: animatemodal 0.5s;
+  }
+  
+  /* Modal Animasi */
+  @keyframes animatemodal {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  
+  .modal-container .close-icon {
+    position: fixed;
+    right: 35rem;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .modal-content video {
+    height: 45rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  /* Media Queries */
+  
+  /* Laptop */
+  @media (max-width: 1366px) {
+    html {
+      font-size: 75%;
+    }
+  }
+  /* Tablet */
+  @media (max-width: 768px) {
+    html {
+      font-size: 62.5%;
+    }
+    #hamburger-menu {
+      display: inline-block;
+    }
+    .navbar .navbar-nav {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background-color: #fff;
+      width: 30rem;
+      height: 100vh;
+      transition: 0.3s;
+    }
+    .navbar .navbar-nav.active {
+      right: 0;
+    }
+    .navbar .navbar-nav a {
+      color: var(--bg);
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+    .navbar .navbar-nav a::after {
+      transform-origin: 0 0;
+    }
+    .navbar .navbar-nav a:hover::after {
+      transform: scaleX(0.2);
+    }
+  
+    .navbar .search-form {
+      width: 90%;
+      right: 2rem;
+    }
+  
+    .about .row,
+    .text-diorama .row {
+      flex-wrap: wrap;
+    }
+  
+    .materi-museum video {
+      flex-wrap: wrap;
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+    }
+    .about .row .about-img img,
+    .text-diorama .row .text-diorama-img img {
+      height: 24rem;
+      object-fit: cover;
+      object-position: center;
+    }
+  
+    .about .row .content,
+    .text-diorama .row .content {
+      padding: 0;
+    }
+  
+    .about .row .content h3 {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+  
+    .about .row .content p,
+    .text-diorama .row .content p {
+      font-size: 1.6rem;
+    }
+  
+    .materi p {
+      font-size: 1.2rem;
+    }
+  
+    .rekap .row,
+    .contact .row {
+      flex-wrap: wrap;
+      object-fit: cover;
+      object-position: center;
+    }
+  
+    .rekap .row .map
+    .contact .row .map {
+      height: 30rem;
+    }
+  
+    .rekap .row form,
+    .contact .row form {
+      padding-top: 0;
+    }
+  
+    .modal-content {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  /* Mobile Phone */
+  @media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+  }
+  
+  /*button login dan register di navbar*/
+  .navbar .login-btn,
+  .navbar .register-btn {
+    float: right;
+  }
+  
+  .login-btn,
+  .register-btn {
+    background-color: #b14531;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .login-btn:hover,
+  .register-btn:hover {
+    background-color: #275d76;
+  }
+  
+  
